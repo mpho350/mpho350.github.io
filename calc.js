@@ -77,4 +77,12 @@ res.textContent = "Invalid Syntax";
 }
 }(i, j));
 });
-
+var sqrtBtn = document.querySelector("#sqrt");
+sqrtBtn.addEventListener("click", function() {
+try {
+res.textContent = Math.sqrt(eval(res.textContent));
+} catch (e) {
+res.textContent = "Invalid Input";
+}
+})
+	
